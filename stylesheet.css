@@ -1,0 +1,35 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+.fullscreen-image {
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#image1 {
+    background-image: url('bybit1.png');
+}
+#image2 {
+    background-image: url('bybit2.png');
+}
+#videoOverlay {
+    display: none; /* This should be declared only once and ensures the overlay is hidden initially */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+#videoPlayer {
+    width: 50%;
+    height: auto;
+}
